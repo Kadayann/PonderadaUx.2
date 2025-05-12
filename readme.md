@@ -17,22 +17,39 @@ Este projeto visa o desenvolvimento de uma plataforma destinada à gerenciamento
 
 ## Estrutura do Projeto
 ├── assets/ # Arquivos estáticos como imagens, fontes, etc.
+
 ├── config/ # Configurações da aplicação
+
 ├── controllers/ # Lógica de controle das rotas
+
 ├── documentos/ # Documentação e arquivos relacionados
+
 ├── models/ # Definição dos modelos de dados
+
 ├── routes/ # Definição das rotas da aplicação
+
 ├── scripts/ # Scripts auxiliares
+
 ├── services/ # Serviços utilizados pela aplicação
+
 ├── tests/ # Testes automatizados
+
 ├── views/ # Templates EJS para renderização das páginas
+
 ├── .env.example # Exemplo de arquivo de variáveis de ambiente
+
 ├── .gitignore # Arquivos e pastas ignorados pelo Git
+
 ├── jest.config.js # Configurações do Jest
+
 ├── package-lock.json # Dependências com versões fixas
+
 ├── package.json # Dependências e scripts do projeto
+
 ├── readme.md # Documentação do projeto
+
 ├── rest.http # Arquivo para testes de requisições HTTP
+
 └── server.js # Arquivo principal para iniciar o servidor
 
 ## Como Executar o Projeto
