@@ -86,7 +86,10 @@ Pode ser verificada com testes, simulando uma inscrição e checando se ela é r
 
 ### 3.3. Wireframes (Semana 03)
 
-*Posicione aqui as imagens do wireframe construído para sua solução e, opcionalmente, o link para acesso (mantenha o link sempre público para visualização).*
+O protótipo apresenta cinco telas principais: Login, Dashboard de eventos, Gerenciamento de eventos, Visualização do evento e Detalhes do evento. Cada tela foi desenhada com uma interface que visa permitir uma fácil navegação para todos os tipos de usuários, assim permitindo que qualquer pessoa crie ou participe de um evento sem dificuldades.
+
+![Participante](https://github.com/user-attachments/assets/39ff8ecb-2252-4b67-a6fe-4109a6916c46)
+
 
 ### 3.4. Guia de estilos (Semana 05)
 
