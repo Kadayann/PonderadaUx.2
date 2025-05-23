@@ -71,18 +71,38 @@ Pode ser verificada com testes, simulando uma inscrição e checando se ela é r
 
 
 ### 3.1.1 BD e Models (Semana 5)
-*Descreva aqui os Models implementados no sistema web*
 
-### 3.2. Arquitetura (Semana 5)
+O sistema utiliza um banco de dados PostgreSQL hospedado no Supabase. A estrutura principal de dados é representada pela tabela tarefas, que contém os seguintes campos:
 
-*Posicione aqui o diagrama de arquitetura da sua solução de aplicação web. Atualize sempre que necessário.*
+- id: Identificador único da tarefa (chave primária);
+- nome: Nome da tarefa;
+- descricao: Descrição detalhada da tarefa;
+- status: Estado atual da tarefa (por exemplo, "pendente" ou "concluída");
+- created_at: Data de criação da tarefa;
+- updated_at: Data da última atualização da tarefa.
 
-**Instruções para criação do diagrama de arquitetura**  
-- **Model**: A camada que lida com a lógica de negócios e interage com o banco de dados.
-- **View**: A camada responsável pela interface de usuário.
-- **Controller**: A camada que recebe as requisições, processa as ações e atualiza o modelo e a visualização.
-  
-*Adicione as setas e explicações sobre como os dados fluem entre o Model, Controller e View.*
+Os Models foram implementados diretamente nos arquivos dos controllers por meio de comandos SQL utilizando o pacote pg, sem o uso de ORM. Dessa forma, os próprios controllers executam operações de inserção, listagem, atualização e exclusão de tarefas diretamente no banco.
+
+---
+
+### 3.2 Arquitetura (Semana 5)
+
+A arquitetura do projeto segue o padrão **MVC (Model-View-Controller)**, promovendo a separação de responsabilidades na aplicação:
+
+- **Model**: Camada responsável por representar a estrutura dos dados e interagir com o banco. No projeto, o model está embutido nos controllers via comandos SQL.
+- **View**: Interface com o usuário construída com EJS (form.ejs, listagem.ejs), permitindo exibição e inserção de tarefas.
+- **Controller**: Lógica da aplicação centralizada no arquivo tarefasController.js, que manipula os dados da tabela tarefas e responde às requisições HTTP.
+
+#### Diagrama da Arquitetura MVC
+
+<img width="768" alt="parte2" src="https://github.com/user-attachments/assets/b1017f58-8d08-466b-b547-4c964bb404c3" />
+
+**Fluxo de dados**:
+1. O cliente acessa o sistema via navegador.
+2. A view envia requisições para o controller.
+3. O controller processa as informações e interage com o model.
+4. O model executa operações no banco de dados (PostgreSQL via Supabase).
+5. A resposta retorna ao controller, que envia o resultado de volta à view para exibição.
 
 ### 3.3. Wireframes (Semana 03)
 
