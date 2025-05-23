@@ -1,83 +1,88 @@
-# Boilerplate MVC em Node.js com PostgreSQL
+# Attendit
 
-Este projeto é um boilerplate básico para uma aplicação Node.js seguindo o padrão MVC (Model-View-Controller), utilizando PostgreSQL como banco de dados.
+**Attendit** é um projeto desenvolvido como parte da atividade do segundo módulo do curso de Desenvolvimento Web. O objetivo é aplicar os conhecimentos adquiridos na criação de uma aplicação web funcional e intuitiva.
 
-## Requisitos
+## Descrição
 
-- Node.js (versão X.X.X)
-- PostgreSQL (versão X.X.X)
+Este projeto visa o desenvolvimento de uma plataforma destinada à gerenciamento de eventos, direcionada tanto para organizadores quanto participantes.Ela oferecerá cadastramento dos eventos com dados como data, localização, descrição e a inscrição dos usuários interessados na participação. O propósito da pesquisa é disponibilizar uma ferramenta fácil e eficaz para gestão de eventos de médio e pequeno tamanhos.
 
-## Instalação
+##  Tecnologias Utilizadas
 
-1. **Clonar o repositório:**
+- **JavaScript**: Linguagem principal para o desenvolvimento do backend e frontend.
+- **EJS (Embedded JavaScript Templates)**: Utilizado para renderização de páginas dinâmicas no frontend.
+- **CSS**: Estilização das páginas para uma melhor apresentação visual.
+- **Node.js**: Ambiente de execução para o JavaScript no servidor.
+- **Express.js**: Framework web para Node.js, facilitando a criação de rotas e gerenciamento de requisições.
+- **Jest**: Framework de testes para garantir a confiabilidade do código.
 
-```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
-   cd seu-projeto
-```
+## Estrutura do Projeto
+├── assets/ # Arquivos estáticos como imagens, fontes, etc.
 
-2. **Instalar as dependências:**
-    
-```bash
-npm install
-```
-    
-3. **Configurar o arquivo `.env`:**
-    
-Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente necessárias, como as configurações do banco de dados PostgreSQL.
-    
+├── config/ # Configurações da aplicação
 
-Configuração do Banco de Dados
-------------------------------
+├── controllers/ # Lógica de controle das rotas
 
-1. **Criar banco de dados:**
-    
-    Crie um banco de dados PostgreSQL com o nome especificado no seu arquivo `.env`.
-    
-2. **Executar o script SQL de inicialização:**
-    
-```bash
-npm run init-db
-```
-    
-Isso criará a tabela `users` no seu banco de dados PostgreSQL com UUID como chave primária e inserirá alguns registros de exemplo.
-    
+├── documentos/ # Documentação e arquivos relacionados
 
-Funcionalidades
----------------
+├── models/ # Definição dos modelos de dados
 
-* **Padrão MVC:** Estrutura organizada em Model, View e Controller.
-* **PostgreSQL:** Banco de dados relacional utilizado para persistência dos dados.
-* **UUID:** Utilização de UUID como chave primária na tabela `users`.
-* **Scripts com `nodemon`:** Utilização do `nodemon` para reiniciar automaticamente o servidor após alterações no código.
-* **Testes:** Inclui estrutura básica para testes automatizados.
+├── routes/ # Definição das rotas da aplicação
 
-Scripts Disponíveis
--------------------
+├── scripts/ # Scripts auxiliares
 
-* `npm start`: Inicia o servidor Node.js.
-* `npm run dev`: Inicia o servidor com `nodemon`, reiniciando automaticamente após alterações no código.
-* `npm run test`: Executa os testes automatizados.
-* `npm run test:coverage`: Executa os testes e gera um relatório de cobertura de código.
+├── services/ # Serviços utilizados pela aplicação
 
-Estrutura de Diretórios
------------------------
+├── tests/ # Testes automatizados
 
-* **`config/`**: Configurações do banco de dados e outras configurações do projeto.
-* **`controllers/`**: Controladores da aplicação (lógica de negócio).
-* **`models/`**: Modelos da aplicação (definições de dados e interações com o banco de dados).
-* **`routes/`**: Rotas da aplicação.
-* **`tests/`**: Testes automatizados.
-* **`views/`**: Views da aplicação (se aplicável).
+├── views/ # Templates EJS para renderização das páginas
 
-Contribuição
-------------
+├── .env.example # Exemplo de arquivo de variáveis de ambiente
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request.
+├── .gitignore # Arquivos e pastas ignorados pelo Git
 
-Licença
--------
+├── jest.config.js # Configurações do Jest
 
-Este projeto está licenciado sob a Licença MIT.
+├── package-lock.json # Dependências com versões fixas
 
-Este README.md fornece uma visão geral clara do boilerplate, incluindo instruções de instalação, configuração do banco de dados, funcionalidades principais, scripts disponíveis, estrutura de diretórios, como contribuir e informações de licença. Certifique-se de personalizar as seções com detalhes específicos do seu projeto conforme necessário.
+├── package.json # Dependências e scripts do projeto
+
+├── readme.md # Documentação do projeto
+
+├── rest.http # Arquivo para testes de requisições HTTP
+
+└── server.js # Arquivo principal para iniciar o servidor
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+   git clone https://github.com/Kadayann/PonderadaUx.2.git
+
+2. Navegue até o diretório do projeto:
+   cd PonderadaUx.2
+
+3. Instale as dependências:
+   npm install
+
+4. Configure as variáveis de ambiente:
+   Renomeie o arquivo `.env.example` para `.env` e ajuste as variáveis conforme necessário.
+
+5. Inicie o servidor:
+   npm start
+
+6. Acesse a aplicação:
+   Abra o navegador e vá para http://localhost:3000 (ou a porta configurada).
+
+## Testes
+
+Para executar os testes automatizados com Jest:
+   npm test
+
+## Contribuidores
+
+- [Kadayann](https://github.com/Kadayann)
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+
