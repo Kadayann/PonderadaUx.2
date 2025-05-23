@@ -122,7 +122,19 @@ O protótipo apresenta cinco telas principais: Login, Dashboard de eventos, Gere
 
 ### 3.6. WebAPI e endpoints (Semana 05)
 
-*Utilize um link para outra página de documentação contendo a descrição completa de cada endpoint. Ou descreva aqui cada endpoint criado para seu sistema.*  
+### 3.6. WebAPI e endpoints (Semana 05)
+
+A API desenvolvida possui os seguintes endpoints relacionados à gestão de tarefas. Todos seguem o padrão RESTful e utilizam JSON como formato de entrada e saída.
+
+| Método | Endpoint           | Descrição                          | Exemplo de corpo da requisição (JSON) |
+|--------|--------------------|------------------------------------|----------------------------------------|
+| POST   | `/api/tarefas`     | Cria uma nova tarefa               | `{ "nome": "Estudar", "descricao": "Cap. 1 ao 5" }` |
+| GET    | `/api/tarefas`     | Lista todas as tarefas             | — |
+| PUT    | `/api/tarefas/:id` | Atualiza uma tarefa pelo ID        | `{ "nome": "Estudar mais", "descricao": "Cap. 1 ao 7", "status": "concluída" }` |
+| DELETE | `/api/tarefas/:id` | Remove uma tarefa pelo ID          | — |
+
+Todos os endpoints foram testados no Postman e interagem com o banco de dados PostgreSQL via Supabase.
+ 
 
 ### 3.7 Interface e Navegação (Semana 07)
 
