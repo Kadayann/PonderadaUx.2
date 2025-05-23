@@ -15,7 +15,7 @@ const pool = new Pool({
 });
 
 const runSQLScript = async () => {
-  const filePath = path.join(__dirname, 'init.sql');
+  const filePath = path.resolve(__dirname, '../scripts/init.sql');
   const sql = fs.readFileSync(filePath, 'utf8');
 
   try {

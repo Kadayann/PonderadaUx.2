@@ -4,11 +4,11 @@
   "description": "Boilerplate para estrutura MVC em JavaScript com PostgreSQL e testes",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node mvc-boilerplate/server.js",
+    "dev": "nodemon mvc-boilerplate/server.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "init-db": "node scripts/runSQLScript.js"
+    "init-db": "node mvc-boilerplate/scripts/runSQLScript.js"
   },
   "dependencies": {
     "dotenv": "^10.0.0",

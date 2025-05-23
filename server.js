@@ -13,11 +13,16 @@ db.connect()
 
     app.use(express.json());
 
+    // Rotas existentes
     const userRoutes = require('./routes/userRoutes');
     app.use('/users', userRoutes);
 
     const frontendRoutes = require('./routes/frontRoutes');
     app.use('/', frontendRoutes);
+
+    // 👉 NOVA ROTA DE TAREFAS
+    const tarefaRoutes = require('./routes/tarefasRoutes');
+    app.use('/api/tarefas', tarefaRoutes);
 
     // Middleware para lidar com erros de rota não encontrada
     app.use((req, res, next) => {
@@ -38,3 +43,4 @@ db.connect()
   .catch(err => {
     console.error('Erro ao conectar ao banco de dados:', err);
   });
+  
