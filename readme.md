@@ -52,25 +52,34 @@ Este projeto visa o desenvolvimento de uma plataforma destinada à gerenciamento
 
 └── server.js # Arquivo principal para iniciar o servidor
 
-## Como Executar o Projeto
+##  Como rodar o projeto
 
-1. Clone o repositório:
-   git clone https://github.com/Kadayann/PonderadaUx.2.git
+1. Clone o repositório:  
+   `git clone https://github.com/Kadayann/PonderadaUx.2.git`
 
-2. Navegue até o diretório do projeto:
-   cd PonderadaUx.2
+2. Navegue até o diretório do projeto:  
+   `cd PonderadaUx.2`
 
-3. Instale as dependências:
-   npm install
+3. Instale as dependências:  
+   `npm install`
 
-4. Configure as variáveis de ambiente:
-   Renomeie o arquivo `.env.example` para `.env` e ajuste as variáveis conforme necessário.
+4. Configure as variáveis de ambiente:  
+   Renomeie o arquivo `.env.example` para `.env` e ajuste os valores conforme necessário:
 
-5. Inicie o servidor:
-   npm start
+       DB_HOST=localhost
+       DB_PORT=5432
+       DB_USER=seu_usuario
+       DB_PASSWORD=sua_senha
+       DB_NAME=nome_do_banco
 
-6. Acesse a aplicação:
-   Abra o navegador e vá para http://localhost:3000 (ou a porta configurada).
+5. Execute a migração para criar as tabelas no banco de dados:  
+   `npm run init-db`
+
+6. Inicie o servidor:  
+   `npm start`
+
+7. Acesse a aplicação:  
+   Abra o navegador e vá para [http://localhost:3000](http://localhost:3000)
 
 ## Testes
 
