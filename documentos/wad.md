@@ -125,9 +125,9 @@ O protótipo apresenta cinco telas principais: Login, Dashboard de eventos, Gere
 
 ![NewEvent](https://github.com/user-attachments/assets/11458845-187f-4588-9f70-777c498d5b53)
 
-![disponiveis](https://github.com/user-attachments/assets/33dee68f-4102-46bf-b792-02f892998688)
+<img width="512" alt="details 2" src="https://github.com/user-attachments/assets/91fd6e85-91f5-475c-8c15-8116cc0e005c" />
 
-![EventDetails](https://github.com/user-attachments/assets/450facf5-a6f5-47dc-80c5-ce8f9ec7dab1)
+![disponiveis](https://github.com/user-attachments/assets/33dee68f-4102-46bf-b792-02f892998688)
 
 ![Eventfeedback](https://github.com/user-attachments/assets/cc2fd8dd-cda9-4cee-8bf7-929410c3487d)
 
