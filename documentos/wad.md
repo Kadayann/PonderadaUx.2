@@ -113,14 +113,32 @@ O protótipo apresenta cinco telas principais: Login, Dashboard de eventos, Gere
 
 ### 3.4. Guia de estilos (Semana 05)
 
-*Descreva aqui orientações gerais para o leitor sobre como utilizar os componentes do guia de estilos de sua solução.*
+
+![guiaestilos](https://github.com/user-attachments/assets/c32da1b1-2279-4e0b-86c1-b86375eeb3ac)
 
 
 ### 3.5. Protótipo de alta fidelidade (Semana 05)
 
-*Posicione aqui algumas imagens demonstrativas de seu protótipo de alta fidelidade e o link para acesso ao protótipo completo (mantenha o link sempre público para visualização).*
+![Log in](https://github.com/user-attachments/assets/7fd539db-97da-4b72-90a1-bc33f41e9667)
 
-### 3.6. WebAPI e endpoints (Semana 05)
+![Main](https://github.com/user-attachments/assets/03200388-54f0-4889-839b-e8db3b37ece3)
+
+![NewEvent](https://github.com/user-attachments/assets/11458845-187f-4588-9f70-777c498d5b53)
+
+![disponiveis](https://github.com/user-attachments/assets/33dee68f-4102-46bf-b792-02f892998688)
+
+![EventDetails](https://github.com/user-attachments/assets/450facf5-a6f5-47dc-80c5-ce8f9ec7dab1)
+
+![Eventfeedback](https://github.com/user-attachments/assets/cc2fd8dd-cda9-4cee-8bf7-929410c3487d)
+
+
+
+
+
+
+
+
+
 
 ### 3.6. WebAPI e endpoints (Semana 05)
 
