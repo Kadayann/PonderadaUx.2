@@ -156,9 +156,39 @@ Todos os endpoints foram testados no Postman e interagem com o banco de dados Po
 
 ### 3.7 Interface e Navegação (Semana 07)
 
-*Descreva e ilustre aqui o desenvolvimento do frontend do sistema web, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar.*
+Durante a semana 07, desenvolvi a interface do sistema web focando na exibição e manipulação de eventos cadastrados. A interface foi construída com EJS e estilizada utilizando CSS personalizado.
 
----
+Páginas entregues:
+Página de listagem de eventos (/eventos): mostra os eventos cadastrados com botões de edição e exclusão.
+
+Formulário de novo evento (/eventos/novo): permite cadastrar novos eventos com nome, data e descrição.
+
+Formulário de edição (/eventos/editar/:id): permite editar eventos existentes de forma prática.
+
+Navegação entre páginas: disponível no cabeçalho da aplicação.
+
+Funcionalidades da interface:
+Os dados exibidos são carregados dinamicamente do banco de dados.
+
+Botões de exclusão usam fetch() com requisição DELETE.
+
+Edição feita com GET + formulário PUT via fetch().
+
+Layout responsivo e limpo, com navegação acessível e rodapé fixo.
+
+Prints de exemplo:
+eventos.ejs com a listagem dos eventos cadastrados.
+![image](https://github.com/user-attachments/assets/9048f7e4-12eb-40b7-b057-015f48023078)
+
+
+Página de cadastro de evento.
+![image](https://github.com/user-attachments/assets/b772fdc8-27dd-463e-90cd-70ed807a921e)
+
+
+Estilo aplicado com CSS customizado.
+![image](https://github.com/user-attachments/assets/70008410-3038-4ab5-995c-97a7c0b68d6c)
+![image](https://github.com/user-attachments/assets/bea058ea-d4ed-45bf-82c4-bd002f1b996d)
+
 
 ## <a name="c4"></a>4. Desenvolvimento da Aplicação Web (Semana 8)
 
