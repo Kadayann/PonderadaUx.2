@@ -193,20 +193,52 @@ Estilo aplicado com CSS customizado.
 ## <a name="c4"></a>4. Desenvolvimento da Aplicação Web (Semana 8)
 
 ### 4.1 Demonstração do Sistema Web (Semana 8)
+https://youtu.be/UpIkkLJHl6c
 
-*VIDEO: Insira o link do vídeo demonstrativo nesta seção*
-*Descreva e ilustre aqui o desenvolvimento do sistema web completo, explicando brevemente o que foi entregue em termos de código e sistema. Utilize prints de tela para ilustrar.*
+![image](https://github.com/user-attachments/assets/298c7ab1-9dcc-4acd-8d5d-67ff49cb7c00)
+O server.js é responsável por iniciar o servidor Node.js e configurar o Express,e as rotas. Esse código conecta as diferentes partes do projeto e inicializa a aplicação
+
+![image](https://github.com/user-attachments/assets/0cbe53b0-2a12-472d-9c11-0031865c8015)
+Esse é o arquivo de rotas específico dos eventos, seguindo o padrão MVC. Define os caminhos para listar, cadastrar, editar e excluir eventos
+
+![image](https://github.com/user-attachments/assets/680dd216-92cf-4bb5-99c7-9af1e80395af)
+Aqui é um exemplo de função do controller responsável por tratar a lógica de negócio do sistema. Essa camada isola a lógica das rotas e interage diretamente com o banco de dados.
+
+![image](https://github.com/user-attachments/assets/81a84058-af55-42f3-805d-34366c9824f8)
+O eventos.ejs gera o HTML dinâmico com os dados do sistema, onde a view é responsável por exibir as informações para o usuário.
+
+![image](https://github.com/user-attachments/assets/ec36502d-fbe0-4a8e-abae-eb7b223f6d30)
+CSS utilizado para estilização da aplicação, ele define cores, espaçamentos e layout, garantindo uma interface agradável.
+
+
 
 ### 4.2 Conclusões e Trabalhos Futuros (Semana 8)
 
-*Indique pontos fortes e pontos a melhorar de maneira geral.*
-*Relacione também quaisquer outras ideias que você tenha para melhorias futuras.*
+### 4.2 Conclusões e Trabalhos Futuros (Semana 8)
+
+####  Pontos fortes do projeto
+- Estrutura clara seguindo o padrão **MVC**.
+- Funcionalidades principais implementadas: **cadastro, listagem, edição, exclusão** e a opção de marcar participação em eventos.
+- Interface limpa e responsiva com uso de CSS básico.
+- Código organizado com separação entre **rotas, controllers e views**.
+- Integração eficiente entre frontend e backend com uso do **fetch** para operações como exclusão.
+
+####  Pontos a melhorar
+- Falta de **validação de dados mais robusta**, especialmente no backend como "campos obrigatórios".
+- Falta de **feedback visual ao usuário** em algumas operações (ex: mensagem de sucesso ao excluir).
+
+
+####  Melhorias futuras
+- Permitir adição de mais informações e controle sobre os eventos.
+- Adicionar **paginação** na listagem para facilitar a visualização em caso de muitos eventos cadastrados.
+- Melhorar a **acessibilidade** da aplicação (ex: suporte a leitores de tela).
+- Implementar **gráficos ou relatórios** com estatísticas sobre os eventos cadastrados.
 
 
 
 ## <a name="c5"></a>5. Referências
 
-_Incluir as principais referências de seu projeto, para que seu parceiro possa consultar caso ele se interessar em aprofundar. Um exemplo de referência de livro e de site:_<br>
+- [Sympla](https://www.sympla.com.br/)  
 
----
----
+- [Eventbrite](https://www.eventbrite.com.br/)  
+
