@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1e293b;
+    }
+    header .logo a {
+      color: #f8fafc;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .navbar a {
+      color: #f8fafc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+  main {
+  flex: 1;
+  max-width: 900px;
+  width: 90%; 
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    ul#lista-eventos {
+      list-style: none;
+      padding: 0;
+    }
+    ul#lista-eventos li {
+      padding: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    a.button, button.button, input[type="submit"], .button {
+      display: inline-block;
+      background-color: #334155;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 0.25rem 0.25rem 0.25rem 0;
+    }
+    a.button:hover, button.button:hover, input[type="submit"]:hover, .button:hover {
+      background-color: #1e293b;
+    }
+    input[type="text"], input[type="date"], input[type="number"], textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0 1rem 0;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
+    footer {
+      background-color: #1e293b;
+      color: #f8fafc;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+ <div class="logo">
+  <a href="/eventos">ATTENDIT</a>
+</div>
+    <nav class="navbar">
+      <a href="/eventos/novo" class="button">Novo Evento</a>
+    </nav>
+  </header>
+  <main>
+
+
+

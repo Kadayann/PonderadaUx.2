@@ -1,0 +1,57 @@
+<%- include('../layout/header') %>
+
+<h1>Eventos Cadastrados</h1>
+
+<ul id="lista-eventos">
+  <% eventos.forEach(evento => { %>
+    <li>
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <input type="checkbox" id="participar-<%= evento.id %>" name="participar-<%= evento.id %>">
+          <label for="participar-<%= evento.id %>">
+            <strong><%= evento.nome %></strong> – <%= evento.data.toISOString().substring(0, 10) %> 
+            <small style="color: #64748b;">(Marque para participar do evento)</small>
+          </label>
+        </div>
+        <div>
+          <a href="/eventos/editar/<%= evento.id %>" class="button">Editar</a>
+          <button onclick="deletarEvento(<%= evento.id %>)" class="button">Excluir</button>
+        </div>
+      </div>
+    </li>
+  <% }) %>
+</ul>
+
+<div style="margin-top: 1rem;">
+  <a href="/eventos/novo" class="button">Cadastrar Novo Evento</a>
+</div>
+
+<script>
+function deletarEvento(id) {
+  if (confirm('Tem certeza que deseja excluir este evento?')) {
+    fetch(`/api/eventos/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        window.location.reload();
+      } else {
+        alert('Erro ao excluir evento');
+      }
+    })
+    .catch(error => {
+      console.error('Erro ao excluir evento:', error);
+      alert('Erro ao excluir evento');
+    });
+  }
+}
+</script>
+
+<%- include('../layout/footer') %>
+
+
+
+

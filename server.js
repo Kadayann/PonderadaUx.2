@@ -7,11 +7,16 @@ const path = require('path');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Conexão com o banco
 db.connect()
   .then(() => {
     console.log('Conectado ao banco de dados PostgreSQL');
 
     app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
+
+    // Servir arquivos estáticos (CSS, JS etc.)
+    app.use(express.static(path.join(__dirname, 'public')));
 
     // Rotas existentes
     const userRoutes = require('./routes/userRoutes');
@@ -20,9 +25,13 @@ db.connect()
     const frontendRoutes = require('./routes/frontRoutes');
     app.use('/', frontendRoutes);
 
-    // 👉 NOVA ROTA DE TAREFAS
+   
     const tarefaRoutes = require('./routes/tarefasRoutes');
     app.use('/api/tarefas', tarefaRoutes);
+
+    
+const eventosRoutes = require('./routes/eventoRoutes');
+    app.use('/', eventosRoutes);
 
     // Middleware para lidar com erros de rota não encontrada
     app.use((req, res, next) => {
@@ -43,4 +52,3 @@ db.connect()
   .catch(err => {
     console.error('Erro ao conectar ao banco de dados:', err);
   });
-  
